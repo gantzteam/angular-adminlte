@@ -12,11 +12,13 @@ import { AppmenuComponent } from './components/appmenu/appmenu.component';
 import { AppsettingComponent } from './components/appsetting/appsetting.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ChartComponent } from './components/chart/chart.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'chart', component: ChartComponent },
   { path: '**', redirectTo: '/login' }
 
 ];
@@ -29,7 +31,8 @@ const routes: Routes = [
     AppmenuComponent,
     AppsettingComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
