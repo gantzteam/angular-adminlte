@@ -25,7 +25,8 @@
           pointStrokeColor    : '#c1c7d1',
           pointHighlightFill  : '#fff',
           pointHighlightStroke: 'rgba(220,220,220,1)',
-          data                : [65, 59, 80, 81, 56, 55, 40]
+          // data                : [65, 59, 80, 81, 56, 55, 40]
+          data                : document.getElementById('chart').dataset.dammyJson.split(',').map(Number)
         },
         {
           label               : 'Digital Goods',
